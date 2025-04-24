@@ -20,6 +20,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # GenesisOs
 # Device identifier. This must come after all inclusions.
 GENESIS_OFFICIAL := false
+GENESIS_MAINTAINER := Alen24
 PRODUCT_NAME := genesis_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := xiaomi
