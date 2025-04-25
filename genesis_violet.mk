@@ -13,15 +13,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit common Genesis OS  Stuff.
-$(call inherit-product, vendor/genesis/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit common Pixelage OS  Stuff.
+$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 
-# GenesisOs
+# PixelageOs
 # Device identifier. This must come after all inclusions.
-GENESIS_OFFICIAL := false
-GENESIS_MAINTAINER := Alen24
-PRODUCT_NAME := genesis_violet
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
+
+# Pixelage
+PIXELAGE_BUILDTYPE := UNOFFICIAL
+PIXELAGE_MAINTAINER := Anirban
+TARGET_FACE_UNLOCK_SUPPORTED := true
+PRODUCT_NAME := pixelage_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
