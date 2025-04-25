@@ -20,8 +20,6 @@ $(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 # Device identifier. This must come after all inclusions.
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_SCREEN_WIDTH := 1080
 
 # Pixelage
 PIXELAGE_BUILDTYPE := UNOFFICIAL
