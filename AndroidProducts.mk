@@ -6,4 +6,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/genesis_violet.mk
+    $(LOCAL_DIR)/pixelage_violet.mk
