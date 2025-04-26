@@ -13,19 +13,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit common Pixelage OS  Stuff.
-$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
+# Inherit common Droidx OS  Stuff.
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
-# PixelageOs
+# Droid-X
 # Device identifier. This must come after all inclusions.
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Pixelage
-PIXELAGE_BUILDTYPE := UNOFFICIAL
-PIXELAGE_MAINTAINER := Anirban
-TARGET_FACE_UNLOCK_SUPPORTED := true
-PRODUCT_NAME := pixelage_violet
+# Droidx
+DROIDX_BUILD_TYPE := UNOFFICIAL
+#BUILD_WITH_GAPPS := true
+DROIDX_GAPPS := true
+TARGET_USE_QUICKPIC := true	
+PRODUCT_NAME := droidx_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
