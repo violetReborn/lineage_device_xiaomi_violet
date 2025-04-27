@@ -18,7 +18,6 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_violet
-PRODUCT_NAME := evolution_violet
 PRODUCT_DEVICE := Redmi Note 7 Pro
 PRODUCT_BRAND := Xiaomi
 
