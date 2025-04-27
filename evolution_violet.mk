@@ -13,15 +13,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_violet
-PRODUCT_DEVICE := violet
-PRODUCT_BRAND := xiaomi
-PRODUCT_MODEL := Redmi Note 7 Pro
+PRODUCT_NAME := evolution_violet
+PRODUCT_DEVICE := Redmi Note 7 Pro
+PRODUCT_BRAND := Xiaomi
+
+# Evo-X
 PRODUCT_MANUFACTURER := Xiaomi
+EVO_BUILD_TYPE := UNOFFICIAL
+EXTRA_UDFPS_ANIMATIONS := false
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="violet-user 10 QKQ1.190915.002 V12.5.1.0.QFHINXM release-keys" \
