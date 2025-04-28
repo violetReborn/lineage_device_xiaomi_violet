@@ -16,6 +16,13 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Evolution-X
+EVO_BUILD_TYPE := UnOfficial
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_APERTURE_CAMERA := true
+WITH_GMS := true
+
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_violet
 PRODUCT_DEVICE := violet
