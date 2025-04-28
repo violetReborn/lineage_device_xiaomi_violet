@@ -11,6 +11,9 @@ $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
 
+# Added Viper4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 28
 
